@@ -1,5 +1,5 @@
 # Etapa 1: Compilación
-FROM openjdk:21-jdk AS builder
+FROM openjdk:21-jdk-slim AS builder
 WORKDIR /app
 
 # Instalar Maven
@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: Runtime
-FROM openjdk:21-jre-slim
+FROM openjdk:21-jdk-slim
 WORKDIR /app
 COPY --from=builder /app/target/emailservice-1.0-SNAPSHOT.jar app.jar
 EXPOSE 8080
