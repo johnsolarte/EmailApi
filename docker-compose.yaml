@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:8080}  # Las plataformas asignan puerto dinámicamente
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:testdb}
+    username: ${SPRING_DATASOURCE_USERNAME:sa}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+  
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:create-drop}
+    show-sql: true
+  
+  h2:
+    console:
+      enabled: true
