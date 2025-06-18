@@ -259,12 +259,4 @@ src/
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
 
-## 📞 Soporte
 
-Si tienes problemas o preguntas, puedes:
-- Abrir un issue en GitHub
-- Contactar al equipo de desarrollo
-
----
-
-**Nota**: Recuerda no compartir credenciales reales en el código fuente. Usa variables de entorno o un sistema de gestión de secretos para información sensible.
